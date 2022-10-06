@@ -8,6 +8,7 @@ import { Home } from './Home'
 import { Login } from './Login'
 import { SignUp } from './SignUp'
 import { Dashboard } from './Dashboard'
+import { Profile } from './Profile'
 
 const router = createBrowserRouter([
     {
@@ -26,7 +27,10 @@ const router = createBrowserRouter([
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
     },
-    
+    {
+        path: "/profile",
+        element: <Profile></Profile>,
+    },
 ])
 
 export const Router = () => (<RouterProvider router={router}/>) 

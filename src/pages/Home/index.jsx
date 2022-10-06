@@ -14,7 +14,7 @@ export function Home() {
         
         <div className="md:flex-1 flex justify-center">
           <img
-            src="./src/assets/imagem/img.png"
+            src="./src/assets/image/img.png"
             alt="teste2"
             className="w-full max-w-md"
           />

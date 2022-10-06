@@ -1,8 +1,8 @@
-import {Input} from './../../components/Input'
+import { Input } from "./../../components/Input";
 
 export const SignUp = () => {
   return (
-    <div>
+    <>
       <header className="p-4 border-b border-red-300">
         <div className="flex justify-center container max-w-5xl">
           <img
@@ -15,11 +15,7 @@ export const SignUp = () => {
       <main className="container max-w-2xl p-4">
         <div className="flex flex-row items-center">
           <a href="/" className="flex ">
-            <img
-              src="./../../src/assets/icones/back.svg"
-              alt="Voltar"
-              className="h-6 space-x-4"
-            />
+            <span class="material-symbols-rounded">arrow_back</span>
           </a>
           <div className="p-4">
             <h2 className="text-xl font-bold">Crie sua conta</h2>
@@ -53,13 +49,14 @@ export const SignUp = () => {
             placeholder="Digite sua senha"
           ></Input>
 
-          <a href="/dashboard"
+          <a
+            href="/dashboard"
             className="block w-full bg-red-500 text-white text-center px-6 py-3 rounded-xl"
           >
             Criar minha conta
           </a>
         </form>
       </main>
-    </div>
+    </>
   );
 };
